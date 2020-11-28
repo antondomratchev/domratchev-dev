@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react"
 import { graphql, PageProps } from "gatsby"
 
-import { ArrowRight } from "react-feather"
+import { ArrowDown, ArrowRight } from "react-feather"
 import ScrollIntoView from "react-scroll-into-view"
 
 import Layout from "../components/layout"
@@ -39,11 +39,7 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
         >
             <Wall data={siteData} />
             {siteData.about !== "" && <About data={siteData.about} />}
-            <div className="px-4 lg:px-0" id="portfolio">
-                {portfolioList}
-            </div>
             <Blog>{blogList}</Blog>
-            <Contact data={siteData.contact} />
         </Layout>
     )
 }
@@ -83,9 +79,8 @@ const Wall = ({ data }) => {
         <React.Fragment>
             <div className="title bg-bg">
                 <h1
-                    className={`text-6xl relative lg:text-7xl ${
-                        data.capitalizeTitleOnHome ? "uppercase" : ""
-                    }`}
+                    className={`text-6xl relative lg:text-7xl ${data.capitalizeTitleOnHome ? "uppercase" : ""
+                        }`}
                 >
                     <span {...spanAttrs}></span>
                     {data.title}
@@ -95,11 +90,11 @@ const Wall = ({ data }) => {
                 {data.introTag}
             </p>
             <p className="text-base lg:text-lg mt-4">{data.description}</p>
-            <ScrollIntoView selector="#portfolio">
+            <ScrollIntoView selector="#blog">
                 <Button
-                    title="SEE WORKS"
-                    type="button"
-                    iconRight={<ArrowRight />}
+                    title="READ BLOG"
+                    type="link"
+                    iconRight={<ArrowDown />}
                 />
             </ScrollIntoView>
         </React.Fragment>
@@ -148,7 +143,8 @@ const About = ({ data }) => {
                 <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
                     About
                 </h2>
-                <p className="mt-5 text-lg">{data}</p>
+                <img className="mx-auto" src={data.image} />
+                <p className="mt-5 text-lg">{data.content}</p>
             </div>
         </div>
     )
@@ -156,7 +152,7 @@ const About = ({ data }) => {
 
 const Blog = ({ children }) => {
     return (
-        <div className="container mx-auto px-0">
+        <div id="blog" className="container mx-auto px-0">
             <div className="pt-20 pb-10 text-center lg:pt-40 lg:pb-20">
                 <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
                     Blog
@@ -183,9 +179,8 @@ const Contact = ({ data }) => {
                     </div>
                 )}
                 <div
-                    className={`w-full ${
-                        hasContactForm ? "lg:w-1/2" : "lg:w-2/3 mx-auto"
-                    } px-6 pt-8`}
+                    className={`w-full ${hasContactForm ? "lg:w-1/2" : "lg:w-2/3 mx-auto"
+                        } px-6 pt-8`}
                 >
                     <ContactDescription data={data} />
                 </div>
@@ -206,7 +201,10 @@ export const query = graphql`
                 twoColumnWall
                 introTag
                 description
-                about
+                about {
+                    content
+                    image
+                }
                 contact {
                     api_url
                     description

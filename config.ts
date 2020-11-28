@@ -1,22 +1,24 @@
 const siteMetadata = {
-    title: `Elemental`,
+    title: `Domratchev.dev`,
     siteUrl: `http://localhost`,
     capitalizeTitleOnHome: false,
     logo: `/images/logo.png`,
     icon: `/images/icon.png`,
-    titleImage: `/images/wall.png`,
-    ogImage: `/images/wall.png`,
-    twoColumnWall: true,
+    titleImage: `/images/wall.jpg`,
+    ogImage: '',
+    twoColumnWall: false,
     cookiePolicy: true,
-    introTag: `PHOTOGRAPHER | VIDEOGRAPHER`,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
-    about:
-        "Cras accumsan a lectus at tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus elementum dapibus dictum. Mauris auctor quam nec est tincidunt hendrerit. Donec pulvinar lobortis mauris. Cras vulputate ullamcorper ligula a rhoncus. Nunc venenatis elementum ligula in semper. Mauris malesuada purus nunc, et ultricies leo aliquam ac. Ut sit amet nunc id magna accumsan hendrerit in eget metus.",
-    author: `@_akzhy`,
+    introTag: `Developer by Day, Hacker by Night`,
+    description: '',
+    about: {
+        image: `/images/image.png`,
+        content: "Hello! I am a full stack developer with over 10 years of experience. I am currently diving into Elixir in hopes to write less Javascript. 🤷‍♂️ Sorry",
+    },
+    author: `@antonromatchev`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
     darkmode: true,
-    switchTheme: true,
+    switchTheme: false,
     navLinks: [
         {
             name: "HOME",
@@ -30,14 +32,6 @@ const siteMetadata = {
             name: "BLOG",
             url: "/blog",
         },
-        {
-            name: "PORTFOLIO",
-            url: "/portfolio",
-        },
-        {
-            name: "CONTACT",
-            url: "/contact",
-        },
     ],
     footerLinks: [
         {
@@ -46,40 +40,25 @@ const siteMetadata = {
         },
         {
             name: "GitHub",
-            url: "https://github.com/akzhy/gatsby-starter-elemental",
+            url: "https://github.com/antondomratchev",
         },
     ],
     social: [
-        {
-            name: "Facebook",
-            icon: "/images/Facebook.svg",
-            url: "#",
-        },
         {
             name: "Twitter",
             icon: "/images/Twitter.svg",
             url: "#",
         },
-        {
-            name: "Instagram",
-            icon: "/images/Instagram.svg",
-            url: "#",
-        },
-        {
-            name: "Youtube",
-            icon: "/images/Youtube.svg",
-            url: "#",
-        },
     ],
     contact: {
         // leave empty ('') or false to hide form
-        api_url: "https://getform.io/f/f227a36e-096a-4c6a-9963-9f1918a85bb3",
+        api_url: "",
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
         mail: "hi@akzhy.com",
         phone: "000-000-0000",
         address: "1234 \nLocation \nLocation",
     },
-    disqus: "elemental-netlify-com",
+    disqus: "",
 }
 
 const beforeContactFormSubmit = data => {

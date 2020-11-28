@@ -7,6 +7,11 @@
 // GraphQL query operation: IndexPageQuery
 // ====================================================
 
+export interface IndexPageQuery_site_siteMetadata_about {
+  content: string | null;
+  image: string | null;
+}
+
 export interface IndexPageQuery_site_siteMetadata_contact {
   api_url: string | null;
   description: string | null;
@@ -29,7 +34,7 @@ export interface IndexPageQuery_site_siteMetadata {
   ogImage: string | null;
   twoColumnWall: boolean | null;
   introTag: string | null;
-  about: string | null;
+  about: IndexPageQuery_site_siteMetadata_about | null;
   contact: IndexPageQuery_site_siteMetadata_contact | null;
   social: (IndexPageQuery_site_siteMetadata_social | null)[] | null;
 }
