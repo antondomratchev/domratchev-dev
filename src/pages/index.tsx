@@ -140,7 +140,7 @@ const About = ({ data }) => {
     return (
         <div className="boxed">
             <div className="px-4 py-20 text-center lg:py-40 lg:px-0">
-                <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
+                <h2 className="gradient-text-1 font-black text-5xl lg:text-6xl">
                     About
                 </h2>
                 <img className="mx-auto" src={data.image} />
@@ -154,7 +154,7 @@ const Blog = ({ children }) => {
     return (
         <div id="blog" className="container mx-auto px-0">
             <div className="pt-20 pb-10 text-center lg:pt-40 lg:pb-20">
-                <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
+                <h2 className="gradient-text-1 font-black text-5xl lg:text-6xl">
                     Blog
                 </h2>
             </div>

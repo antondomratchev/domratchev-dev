@@ -30,7 +30,7 @@ export default function blog({ location, data }: PageProps<BlogQuery, {}>) {
                     />
                     <div className="relative w-full lg:w-3/4 md:w-11/12 sm:w-full p-6 box-border lg:box-content mx-auto bg-bg text-color-default blog-wall-content shadow-xl md:-mt-16 ">
                         <div className="p-3">
-                            <h1 className="text-5xl font-bold text-primary">
+                            <h1 className="text-5xl font-bold gradient-text-2">
                                 {data.mdx.frontmatter.title}
                             </h1>
                             <p className="mt-1 flex">
