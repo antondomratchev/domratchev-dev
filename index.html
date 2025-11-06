@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technically Casual - Domratchev.dev</title>
+  <meta name="description" content="Engineering insights and technical deep dives from the field">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Grid Background -->
+  <div class="grid-background-container">
+    <div class="grid-background-layer grid-main"></div>
+    <div class="grid-background-layer grid-large"></div>
+    <div class="dot-matrix-layer"></div>
+    <div class="scan-line"></div>
+    <div class="vignette"></div>
+    
+    <!-- Animated Symbols -->
+    <svg class="floating-symbol symbol-1" width="20" height="20" viewBox="0 0 20 20">
+      <path d="M10 0 L10 20 M0 10 L20 10" stroke="currentColor" stroke-width="1.5" fill="none"/>
+    </svg>
+    <svg class="floating-symbol symbol-2" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M5 12 L19 12 M19 12 L15 8 M19 12 L15 16" stroke="currentColor" stroke-width="1.5" fill="none"/>
+    </svg>
+    <svg class="floating-symbol symbol-3" width="20" height="20" viewBox="0 0 20 20">
+      <path d="M10 0 L10 20 M0 10 L20 10" stroke="currentColor" stroke-width="1.5" fill="none"/>
+    </svg>
+    <svg class="floating-symbol symbol-4" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M3 3 L12 12 M12 3 L21 12 M12 12 L12 21" stroke="currentColor" stroke-width="1.5" fill="none"/>
+    </svg>
+    <svg class="floating-symbol symbol-5" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M5 12 L19 12 M19 12 L15 8 M19 12 L15 16" stroke="currentColor" stroke-width="1.5" fill="none"/>
+    </svg>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navigation">
+    <div class="container nav-content">
+      <a href="/" class="logo">Domratchev.dev</a>
+      <div class="nav-links">
+        <a href="#posts" class="nav-link">Posts</a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="nav-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+          </svg>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="nav-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content-wrapper">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-label">
+            <div class="hero-line"></div>
+            <span class="hero-label-text">SYSTEM_BLOG</span>
+            <div class="hero-line"></div>
+          </div>
+          
+          <h1 class="hero-title">Technically Casual</h1>
+          
+          <p class="hero-subtitle">
+            Engineering insights and technical deep dives from the field
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Posts Stream -->
+    <section id="posts" class="posts-section">
+      <div class="container">
+        <div class="posts-container">
+          
+          <!-- Blog Post 1 -->
+          <article class="blog-card">
+            <div class="blog-meta">
+              <div class="meta-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>2025-03-15</span>
+              </div>
+              <div class="meta-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>8 min read</span>
+              </div>
+            </div>
+            <h2 class="blog-title">Building Scalable Microservices Architecture</h2>
+            <p class="blog-excerpt">Exploring the principles and patterns for designing distributed systems that can handle millions of requests. Deep dive into service mesh, API gateways, and event-driven architecture.</p>
+            <div class="blog-tags">
+              <span class="tag">Architecture</span>
+              <span class="tag">Microservices</span>
+              <span class="tag">DevOps</span>
+            </div>
+            <div class="read-more">
+              <div class="read-more-line"></div>
+              <span>READ_MORE</span>
+            </div>
+          </article>
+
+          <!-- Blog Post 2 -->
+          <article class="blog-card">
+            <div class="blog-meta">
+              <div class="meta-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>2025-03-08</span>
+              </div>
+              <div class="meta-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>12 min read</span>
+              </div>
+            </div>
+            <h2 class="blog-title">Advanced TypeScript Patterns for Enterprise Apps</h2>
+            <p class="blog-excerpt">Type-safe patterns and techniques for building maintainable large-scale applications. From conditional types to template literals and beyond.</p>
+            <div class="blog-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">Patterns</span>
+              <span class="tag">Best Practices</span>
+            </div>
+            <div class="read-more">
+              <div class="read-more-line"></div>
+              <span>READ_MORE</span>
+            </div>
+          </article>
+
+          <!-- Blog Post 3 -->
+          <article class="blog-card">
+            <div class="blog-meta">
+              <div class="meta-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>2025-02-28</span>
+              </div>
+              <div class="meta-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>10 min read</span>
+              </div>
+            </div>
+            <h2 class="blog-title">Real-time Data Processing with Stream Analytics</h2>
+            <p class="blog-excerpt">Implementing high-throughput data pipelines using modern streaming technologies. Performance optimization and monitoring strategies.</p>
+            <div class="blog-tags">
+              <span class="tag">Data Engineering</span>
+              <span class="tag">Streaming</span>
+              <span class="tag">Performance</span>
+            </div>
+            <div class="read-more">
+              <div class="read-more-line"></div>
+              <span>READ_MORE</span>
+            </div>
+          </article>
+
+          <!-- Blog Post 4 -->
+          <article class="blog-card">
+            <div class="blog-meta">
+              <div class="meta-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>2025-02-20</span>
+              </div>
+              <div class="meta-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>15 min read</span>
+              </div>
+            </div>
+            <h2 class="blog-title">Container Orchestration: Beyond the Basics</h2>
+            <p class="blog-excerpt">Advanced Kubernetes concepts including custom controllers, operators, and service mesh integration for production workloads.</p>
+            <div class="blog-tags">
+              <span class="tag">Kubernetes</span>
+              <span class="tag">DevOps</span>
+              <span class="tag">Infrastructure</span>
+            </div>
+            <div class="read-more">
+              <div class="read-more-line"></div>
+              <span>READ_MORE</span>
+            </div>
+          </article>
+
+          <!-- Blog Post 5 -->
+          <article class="blog-card">
+            <div class="blog-meta">
+              <div class="meta-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>2025-02-12</span>
+              </div>
+              <div class="meta-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>9 min read</span>
+              </div>
+            </div>
+            <h2 class="blog-title">Optimizing Frontend Performance at Scale</h2>
+            <p class="blog-excerpt">Techniques for achieving sub-second load times including code splitting, lazy loading, and advanced caching strategies.</p>
+            <div class="blog-tags">
+              <span class="tag">Performance</span>
+              <span class="tag">Frontend</span>
+              <span class="tag">Optimization</span>
+            </div>
+            <div class="read-more">
+              <div class="read-more-line"></div>
+              <span>READ_MORE</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="status">
+            <div class="status-dot"></div>
+            <span>SYSTEM_STATUS: OPERATIONAL</span>
+          </div>
+          <div>© 2025 Domratchev.dev</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
